@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactUseState2 from './ReactUseState2';
 
 export default function ReactUseState() {
 
@@ -36,6 +37,11 @@ export default function ReactUseState() {
                 Remove Plate
             </button>
             <p>I can eat {count} plates biriyani</p>
+
+            <ReactUseState2 plates={count} />
+            <ReactUseState2 plates={count} />
+            <ReactUseState2 plates={count + 10} />
+            <ReactUseState2 plates={count + 5} />
         </div>
     )
 }
